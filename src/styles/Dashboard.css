@@ -1,0 +1,90 @@
+.container {
+    width: 100vw;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 5px 10px;
+    justify-content: space-evenly;
+}
+
+.dashboard {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    gap: 5px;
+    width: 300px;
+    background-color: whitesmoke;
+}
+
+.cardHeading1 {
+    padding: 15px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image {
+    margin-right: 5px;
+    position: relative;
+    /* display: inline-block; */
+    display: flex;
+    margin-right: 22px;
+    margin-left: 2rem;
+    width: 15px;
+    height: 15px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.selectList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.three_dot {
+    position: relative;
+}
+
+.three_dot_options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: black;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.three_dot:hover .three_dot_options {
+    display: block;
+    background-color: black;
+}
+
+.three_dot_options span {
+    cursor: pointer;
+}
+
+.three_dot_options span:hover {
+    color: red;
+    background-color: black;
+    /* Customize the color for delete option */
+}
+
+.three_dot_options span:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+#length {
+    color: lightseagreen;
+    font-weight: normal;
+}
